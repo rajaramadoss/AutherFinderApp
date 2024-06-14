@@ -1,0 +1,4 @@
+FROM openjdk:17-alpine
+WORKDIR usr/src
+ADD target/autherservice-0.0.1-SNAPSHOT.jar /usr/src/autherservice-0.0.1-SNAPSHOT.jar
+ENTRYPOINT [ "java","-jar", "autherservice-0.0.1-SNAPSHOT.jar"]
